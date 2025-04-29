@@ -29,8 +29,13 @@ android {
 }
 
 dependencies {
-    // Substituir 'libs' por dependências explícitas se necessário
+
+    // Dependência para recursos de AndroidX básicos
     implementation "androidx.core:core-ktx:1.10.1"
+
+    // Dependência para Room Database (runtime)
     implementation "androidx.room:room-runtime:2.5.2"
-    annotationProcessor "androidx.room:room-compiler:2.5.2" // Use "annotationProcessor" para Java
+
+    // Dependência para o compilador de anotações do Room (para projetos em Java)
+    annotationProcessor "androidx.room:room-compiler:2.5.2"
 }
